@@ -1,0 +1,875 @@
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    background: #fff5f5;
+
+    color: #4b1018;
+
+    overflow-x: hidden;
+
+}
+
+
+
+/* ================================= */
+/* WELCOME PAGE */
+/* ================================= */
+
+.welcome {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #70000d,
+            #a90019,
+            #e52b3c,
+            #ff6673
+        );
+
+}
+
+
+.small-text {
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.welcome h1 {
+
+    font-size:
+        clamp(45px, 8vw, 80px);
+
+    line-height: 1.1;
+
+}
+
+
+.welcome h1 span {
+
+    display: block;
+
+    color: #ffdce1;
+
+}
+
+
+.subtitle {
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+}
+
+
+
+/* ================================= */
+/* START BUTTON */
+/* ================================= */
+
+.main-button {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #a00016;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+
+.main-button:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.2);
+
+}
+
+
+
+/* ================================= */
+/* PHOTO SECTION */
+/* ================================= */
+
+.photos {
+
+    min-height: 100vh;
+
+    padding:
+        100px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: #fff8f8;
+
+}
+
+
+.red-text {
+
+    color: #b00018;
+
+}
+
+
+h2 {
+
+    font-size:
+        clamp(35px, 5vw, 55px);
+
+    color: #9f0712;
+
+}
+
+
+.description {
+
+    margin-top: 12px;
+
+    margin-bottom: 45px;
+
+    color: #7d4a50;
+
+    font-size: 17px;
+
+}
+
+
+
+/* ================================= */
+/* PHOTO GRID */
+/* ================================= */
+
+.photo-grid {
+
+    width:
+        min(1000px, 100%);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.photo-card {
+
+    padding: 9px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(125,0,20,.15);
+
+    transform:
+        rotate(-2deg);
+
+    transition: .3s;
+
+}
+
+
+.photo-card:nth-child(even) {
+
+    transform:
+        rotate(2deg);
+
+}
+
+
+.photo-card:hover {
+
+    transform:
+        translateY(-10px)
+        rotate(0deg)
+        scale(1.03);
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    display: block;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+}
+
+
+
+/* ================================= */
+/* PHOTO CAPTIONS */
+/* ================================= */
+
+.photo-card p {
+
+    padding:
+        12px 5px 7px;
+
+    color: #8b0012;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    line-height: 1.4;
+
+}
+
+
+
+/* ================================= */
+/* SCROLL MESSAGE */
+/* ================================= */
+
+.scroll-message {
+
+    margin-top: 80px;
+
+    color: #a00016;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+}
+
+
+.scroll-message p:first-child {
+
+    font-weight: bold;
+
+    font-size: 21px;
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE SECTION */
+/* ================================= */
+
+.envelope-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding:
+        50px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe9ec,
+            #ffcbd1
+        );
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE BUTTON */
+/* ================================= */
+
+.envelope-button {
+
+    display: block;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE */
+/* ================================= */
+
+.envelope {
+
+    width: 330px;
+
+    height: 220px;
+
+    position: relative;
+
+    transition: .3s;
+
+    filter:
+        drop-shadow(
+            0 15px 15px
+            rgba(80,0,20,.25)
+        );
+
+}
+
+
+.envelope-button:hover
+.envelope {
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE BODY */
+/* ================================= */
+
+.envelope-body {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #d71932;
+
+    border-radius: 7px;
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE FRONT */
+/* ================================= */
+
+.envelope-body::before {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 65%;
+
+    background: #b8001c;
+
+    clip-path:
+        polygon(
+            0 0,
+            50% 65%,
+            100% 0,
+            100% 100%,
+            0 100%
+        );
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE TOP */
+/* ================================= */
+
+.envelope-top {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 62%;
+
+    background: #ed4052;
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            50% 100%
+        );
+
+    z-index: 3;
+
+}
+
+
+
+/* ================================= */
+/* ENVELOPE HEART */
+/* ================================= */
+
+.envelope-heart {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 57%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #ffe1e5;
+
+    color: #b00018;
+
+    font-size: 32px;
+
+    z-index: 5;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.2);
+
+}
+
+
+.click-text {
+
+    margin-top: 25px;
+
+    color: #a00016;
+
+    font-size: 17px;
+
+}
+
+
+
+/* ================================= */
+/* LETTER SECTION */
+/* ================================= */
+
+.letter-section {
+
+    min-height: 100vh;
+
+    padding:
+        100px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #800010,
+            #c20d25,
+            #ed4052
+        );
+
+}
+
+
+
+/* ================================= */
+/* LETTER PAPER */
+/* ================================= */
+
+.letter {
+
+    position: relative;
+
+    width:
+        min(750px, 95%);
+
+    padding:
+        65px 70px;
+
+    background: #fffdf8;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.3);
+
+}
+
+
+
+/* ================================= */
+/* LETTER HEART */
+/* ================================= */
+
+.letter-heart {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    font-size: 35px;
+
+    color: #c20d25;
+
+}
+
+
+
+/* ================================= */
+/* LETTER SMALL TEXT */
+/* ================================= */
+
+.letter-small {
+
+    text-align: center;
+
+    color: #a00016;
+
+    font-style: italic;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* ================================= */
+/* LETTER TITLE */
+/* ================================= */
+
+.letter h2 {
+
+    text-align: center;
+
+    color: #a00016;
+
+    font-size:
+        clamp(30px, 5vw, 45px);
+
+    line-height: 1.2;
+
+}
+
+
+
+/* ================================= */
+/* LETTER LINE */
+/* ================================= */
+
+.line {
+
+    width: 80px;
+
+    height: 3px;
+
+    background: #c20d25;
+
+    margin:
+        20px auto 35px;
+
+}
+
+
+
+/* ================================= */
+/* LETTER TEXT */
+/* ================================= */
+
+.letter-text {
+
+    color: #4b2025;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.letter-text p {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* ================================= */
+/* LAST MESSAGE */
+/* ================================= */
+
+.last-message {
+
+    text-align: center;
+
+    color: #b00018;
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+
+/* ================================= */
+/* SIGNATURE */
+/* ================================= */
+
+.signature {
+
+    margin-top: 40px;
+
+    text-align: right;
+
+    color: #8b0012;
+
+    font-style: italic;
+
+    font-size: 17px;
+
+}
+
+
+
+/* ================================= */
+/* BACK BUTTON */
+/* ================================= */
+
+.back-button {
+
+    margin-top: 35px;
+
+    padding:
+        13px 25px;
+
+    border:
+        2px solid white;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+
+.back-button:hover {
+
+    background: white;
+
+    color: #a00016;
+
+}
+
+
+
+/* ================================= */
+/* FOOTER */
+/* ================================= */
+
+footer {
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #68000c;
+
+    color: #ffdce1;
+
+}
+
+
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 800px) {
+
+
+    .photo-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .letter {
+
+        padding:
+            45px 35px;
+
+    }
+
+}
+
+
+
+/* ================================= */
+/* PHONE */
+/* ================================= */
+
+@media (max-width: 500px) {
+
+
+    .photo-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .envelope {
+
+        width: 290px;
+
+        height: 195px;
+
+    }
+
+
+    .letter {
+
+        padding:
+            40px 25px;
+
+    }
+
+
+    .letter-text {
+
+        font-size: 15px;
+
+    }
+
+
+    .photo-card p {
+
+        font-size: 13px;
+
+    }
+
+}
